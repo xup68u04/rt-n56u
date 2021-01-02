@@ -99,7 +99,7 @@ jobs:
     - name: Upload binaries to release
       uses: svenstaro/upload-release-action@v1-release
       with:
-        repo_token: 55719c68a4ee259f702810e02103e139ba51e608
+        repo_token: ${{ secrets.R_TOKEN }}
         file: /opt/images/*.trx
         tag: AtuoBuild
         overwrite: true
